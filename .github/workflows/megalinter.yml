@@ -4,7 +4,7 @@
 # CAMARA Project - Github Action for Pull Reqests
 # 31.01.2024 - initial version
 
-name: MegaLinter
+name: megaLinter
 
 on: # yamllint disable-line rule:truthy
   # Pull Requests to main
