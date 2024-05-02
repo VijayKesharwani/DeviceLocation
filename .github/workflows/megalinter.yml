@@ -23,6 +23,9 @@ concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
 
+permissions:
+  pull-requests: write
+
 jobs:
   megalinter:
     uses: VijayKesharwani/QualityOnDemand/.github/workflows/megalinter.yml@main
