@@ -11,6 +11,11 @@ concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
 
+permissions:
+  pull-requests: write
+  contents: write
+  issues: write
+
 jobs:
   spectral_manual_run:
     uses: VijayKesharwani/QualityOnDemand/.github/workflows/spectral_oas_lint.yml@main 
